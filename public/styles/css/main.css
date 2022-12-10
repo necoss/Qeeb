@@ -1,0 +1,1040 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Monument Extended";
+  src: url(../../fonts/Monument_Extended/MonumentExtended-Regular.otf);
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gilroy Regular";
+  src: url("../../fonts/Gilroy/Gilroy-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gilroy Bold";
+  src: url("../../fonts/Gilroy/Gilroy-Bold.ttf");
+  font-style: normal;
+  font-weight: bold;
+}
+:root {
+  --color-turquoise: #52ffe0;
+  --color-black: #101010;
+  --color-dark-grey: #2c2d31;
+  --color-light-grey: #f8f8f8;
+}
+
+body {
+  background: var(--color-black);
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1620px;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header .navigation {
+  background: var(--color-black);
+  padding-top: 37px;
+}
+header .navigation nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .navigation nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .navigation nav ul:first-child {
+  padding-right: 2px;
+}
+header .navigation nav ul:first-child a {
+  font-family: "Gilroy Bold";
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  will-change: transform;
+}
+header .navigation nav ul:first-child a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+header .navigation nav ul:last-child a {
+  color: var(--color-black);
+  background: var(--color-turquoise);
+  padding: 14px 26px;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+header .navigation nav ul:last-child a:hover {
+  background: transparent;
+  color: var(--color-turquoise);
+  border: 2px solid var(--color-turquoise);
+}
+header .navigation nav ul:nth-of-type(2) li:hover {
+  opacity: 0.8;
+}
+header .navigation nav ul li {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+header .navigation nav ul li:not(:last-child) {
+  margin-right: 40px;
+}
+header .navigation nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Red Rose";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .welcome__section {
+  padding-top: 73px;
+}
+main .welcome__section .welcome_section__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .welcome__section .welcome_section__content .welcome_section__content__text p:first-child {
+  font-family: "Monument Extended";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 43px;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+main .welcome__section .welcome_section__content .welcome_section__content__text h2 {
+  font-family: "Monument Extended";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 69px;
+  line-height: 86px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  max-width: 708px;
+  padding-top: 16px;
+}
+main .welcome__section .welcome_section__content .welcome_section__content__text .welcome_section__content__text__other {
+  padding-top: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+main .welcome__section .welcome_section__content .welcome_section__content__text .welcome_section__content__text__other a {
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--color-dark-grey);
+  text-decoration: none;
+  background: #52FFE0;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  padding: 16px 34px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+main .welcome__section .welcome_section__content .welcome_section__content__text .welcome_section__content__text__other a:hover {
+  background: transparent;
+  color: var(--color-turquoise);
+  border: 2px solid var(--color-turquoise);
+}
+main .welcome__section .welcome_section__content .welcome_section__content__text .welcome_section__content__text__other .welcome_section__content__text__other__users {
+  padding-left: 55px;
+}
+main .welcome__section .welcome_section__content .welcome_section__content__text .welcome_section__content__text__other .welcome_section__content__text__other__users img:not(:first-child) {
+  margin-left: -22px;
+}
+main .welcome__section .welcome_section__content .welcome_section__content__text .welcome_section__content__text__other .welcome_section__content__text__other__arrow {
+  position: absolute;
+  left: 325px;
+  top: 70px;
+}
+main .welcome__section .welcome_section__content .welcome_section__content__text .welcome_section__content__text__statistic {
+  padding-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+main .welcome__section .welcome_section__content .welcome_section__content__text .welcome_section__content__text__statistic .welcome_section__content__text__statistic__block:not(:last-of-type) {
+  padding-right: 116px;
+}
+main .welcome__section .welcome_section__content .welcome_section__content__text .welcome_section__content__text__statistic .welcome_section__content__text__statistic__block h3 {
+  font-family: "Monument Extended";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+main .welcome__section .welcome_section__content .welcome_section__content__text .welcome_section__content__text__statistic .welcome_section__content__text__statistic__block p {
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #818698;
+}
+main .welcome__section .welcome_section__content .layer {
+  position: relative;
+  width: 540px;
+  height: 490px;
+}
+main .welcome__section .welcome_section__content .layer::before {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  content: " ";
+  background: -webkit-gradient(linear, left top, left bottom, from(#7F1CFC), to(#59DCDC));
+  background: linear-gradient(180deg, #7F1CFC 0%, #59DCDC 100%);
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
+  width: inherit;
+  height: inherit;
+}
+main .welcome__section .welcome_section__content .layer .welcome_section__content__image {
+  position: relative;
+}
+main .welcome__section .welcome_section__content .layer .welcome_section__content__image img:first-of-type {
+  margin-top: -50px;
+  width: 105%;
+}
+main .welcome__section .welcome_section__content .layer .welcome_section__content__image img:last-of-type {
+  width: 25%;
+  position: absolute;
+  bottom: -40px;
+  left: -40px;
+}
+main .popular_categories {
+  padding-top: 100px;
+  position: relative;
+}
+main .popular_categories .popular_categories__title {
+  font-family: "Monument Extended";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+main .popular_categories .popular_categories__swiper {
+  margin-top: 72px;
+}
+main .popular_categories .popular_categories__swiper .popular_categories__swiper_wrapper .popular_categories__swiper_wrapper__slide {
+  width: 245px;
+  height: 267px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  border-radius: 50px;
+  background: var(--color-dark-grey);
+}
+main .popular_categories .popular_categories__swiper .popular_categories__swiper_wrapper .popular_categories__swiper_wrapper__slide img {
+  width: 145px;
+  padding-top: 20px;
+}
+main .popular_categories .popular_categories__swiper .popular_categories__swiper_wrapper .popular_categories__swiper_wrapper__slide h5 {
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  padding-top: 30px;
+}
+main .popular_categories .popular_categories__swiper__button-prev,
+main .popular_categories .popular_categories__swiper__button-next {
+  position: absolute;
+  color: white;
+  background-color: var(--color-dark-grey);
+  border-radius: 100%;
+  padding: 26px;
+  z-index: 99;
+  top: 330px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+main .popular_categories .popular_categories__swiper__button-prev::after,
+main .popular_categories .popular_categories__swiper__button-next::after {
+  font-size: 20px !important;
+}
+main .popular_categories .popular_categories__swiper__button-prev {
+  left: 130px;
+}
+main .popular_categories .popular_categories__swiper__button-prev:hover {
+  background: var(--color-turquoise);
+}
+main .popular_categories .popular_categories__swiper__button-prev:hover::after {
+  color: black;
+}
+main .popular_categories .popular_categories__swiper__button-next {
+  right: 130px;
+}
+main .popular_categories .popular_categories__swiper__button-next:hover {
+  background: var(--color-turquoise);
+}
+main .popular_categories .popular_categories__swiper__button-next:hover::after {
+  color: black;
+}
+main .collections {
+  background: #1D1E22;
+  padding-top: 137px;
+  margin-top: 120px;
+}
+main .collections .collections__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .collections .collections__title h6 {
+  font-family: "Monument Extended";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+main .collections .collections__title .collections__title__sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #2C2D31;
+  padding: 5px;
+  border-radius: 20px;
+}
+main .collections .collections__title .collections__title__sort a {
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 20px 32px;
+}
+main .collections .collections__title .collections__title__sort a:first-child {
+  margin-right: 12px;
+  background: #1D1E22;
+  border-radius: 20px;
+}
+main .collections .collections__cards {
+  padding-top: 55px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+main .collections .collections__cards .collections__cards__card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: #2C2D31;
+  max-width: 460px;
+  border-radius: 30px;
+  padding: 10px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  will-change: transition;
+}
+main .collections .collections__cards .collections__cards__card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+main .collections .collections__cards .collections__cards__card .collections__cards__card__images {
+  position: relative;
+}
+main .collections .collections__cards .collections__cards__card .collections__cards__card__images img {
+  width: 100px;
+}
+main .collections .collections__cards .collections__cards__card .collections__cards__card__images .collections__cards__card__images__num {
+  position: absolute;
+  top: -2px;
+  right: -7px;
+  background: #52FFE0;
+  border-radius: 100%;
+  padding: 7px 14px;
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #2C2D31;
+}
+main .collections .collections__cards .collections__cards__card .collections__cards__card__title {
+  padding-left: 14px;
+}
+main .collections .collections__cards .collections__cards__card .collections__cards__card__title h6 {
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+main .collections .collections__cards .collections__cards__card .collections__cards__card__title p {
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #818698;
+}
+main .collections .collections__cards .collections__cards__card .collections__cards__card__price {
+  position: absolute;
+  right: 30px;
+}
+main .collections .collections__cards .collections__cards__card .collections__cards__card__price p {
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 400;
+}
+main .collections .collections__cards .collections__cards__card .collections__cards__card__price .collections__cards__card__price_crypto {
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+main .collections .collections__cards .collections__cards__card .collections__cards__card__price .collections__cards__card__price_dollar {
+  font-size: 16px;
+  line-height: 20px;
+  color: #818698;
+}
+main .collections .collections__cards .collections__cards__card .collections__cards__card__price .collections__cards__card__price_percent {
+  font-size: 14px;
+  line-height: 17px;
+  color: #52FFE0;
+}
+main .collections .collections__see_all__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 72px;
+  padding-bottom: 80px;
+}
+main .collections .collections__see_all__button a {
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2C2D31;
+  padding: 14px 19px;
+  background: #52FFE0;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  text-decoration: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+main .collections .collections__see_all__button a:hover {
+  background: transparent;
+  border: 2px solid var(--color-turquoise);
+  color: var(--color-turquoise);
+}
+main .tranding_section .tranding_section__title {
+  padding-top: 120px;
+  font-family: "Monument Extended";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+main .tranding_section .tranding_section__swiper {
+  padding-top: 72px;
+}
+main .tranding_section .tranding_section__swiper .tranding_section__swiper_wrapper__swiper_slide {
+  background: #1D1E22;
+  width: 333px !important;
+  border-radius: 30px;
+}
+main .tranding_section .tranding_section__swiper .tranding_section__swiper_wrapper__swiper_slide img {
+  width: 333px;
+}
+main .tranding_section .tranding_section__swiper .tranding_section__swiper_wrapper__swiper_slide .tranding_section__swiper_wrapper__swiper_slide__title {
+  padding-top: 8px;
+  padding-left: 15px;
+}
+main .tranding_section .tranding_section__swiper .tranding_section__swiper_wrapper__swiper_slide .tranding_section__swiper_wrapper__swiper_slide__title h6 {
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+main .tranding_section .tranding_section__swiper .tranding_section__swiper_wrapper__swiper_slide .tranding_section__swiper_wrapper__swiper_slide__title p {
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  padding-top: 4px;
+}
+main .tranding_section .tranding_section__swiper .tranding_section__swiper_wrapper__swiper_slide .tranding_section__swiper_wrapper__swiper_slide__price {
+  background: #2C2D31;
+  margin: 22px 10px 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px 24px;
+  border-radius: 20px;
+}
+main .tranding_section .tranding_section__swiper .tranding_section__swiper_wrapper__swiper_slide .tranding_section__swiper_wrapper__swiper_slide__price p {
+  font-family: "Red Hat Display";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  padding-top: 8px;
+}
+main .tranding_section .tranding_section__swiper .tranding_section__swiper_wrapper__swiper_slide .tranding_section__swiper_wrapper__swiper_slide__price p:first-child {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  color: #999999;
+  padding-top: 0;
+}
+main .tranding_section .tranding_section__swiper__button-prev,
+main .tranding_section .tranding_section__swiper__button-next {
+  position: absolute;
+  color: white;
+  background-color: var(--color-dark-grey);
+  border-radius: 100%;
+  padding: 30px;
+  z-index: 99;
+  top: 330px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+main .tranding_section .tranding_section__swiper__button-prev::after,
+main .tranding_section .tranding_section__swiper__button-next::after {
+  font-size: 22px !important;
+}
+main .tranding_section .tranding_section__swiper__button-prev {
+  left: 120px;
+  top: 2800px;
+}
+main .tranding_section .tranding_section__swiper__button-prev:hover {
+  background: var(--color-turquoise);
+}
+main .tranding_section .tranding_section__swiper__button-prev:hover::after {
+  color: black;
+}
+main .tranding_section .tranding_section__swiper__button-next {
+  right: 120px;
+  top: 2800px;
+}
+main .tranding_section .tranding_section__swiper__button-next:hover {
+  background: var(--color-turquoise);
+}
+main .tranding_section .tranding_section__swiper__button-next:hover::after {
+  color: black;
+}
+main .insights {
+  background: #1D1E22;
+  margin-top: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+main .insights .insights-content .insights-content__title {
+  font-family: "Monument Extended";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+main .insights .insights-content .insights-content__news_cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 48px;
+}
+main .insights .insights-content .insights-content__news_cards .insights-content__news_cards__card {
+  width: 400px;
+}
+main .insights .insights-content .insights-content__news_cards .insights-content__news_cards__card:not(:last-child) {
+  margin-right: 30px;
+}
+main .insights .insights-content .insights-content__news_cards .insights-content__news_cards__card .insights-content__news_cards__card__image {
+  width: 350px;
+}
+main .insights .insights-content .insights-content__news_cards .insights-content__news_cards__card .insights-content__news_cards__card__info {
+  padding-top: 24px;
+  position: relative;
+}
+main .insights .insights-content .insights-content__news_cards .insights-content__news_cards__card .insights-content__news_cards__card__info .insights-content__news_cards__card__info__publisher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+main .insights .insights-content .insights-content__news_cards .insights-content__news_cards__card .insights-content__news_cards__card__info .insights-content__news_cards__card__info__publisher .insights-content__news_cards__card__info__publisher__category {
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #0A142F;
+  padding: 5px 12px;
+  background: white;
+  border-radius: 36px;
+}
+main .insights .insights-content .insights-content__news_cards .insights-content__news_cards__card .insights-content__news_cards__card__info .insights-content__news_cards__card__info__publisher .insights-content__news_cards__card__info__publisher__author {
+  padding-left: 14px;
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #DFE5F5;
+}
+main .insights .insights-content .insights-content__news_cards .insights-content__news_cards__card .insights-content__news_cards__card__info .insights-content__news_cards__card__info__header {
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 48px;
+  color: #FFFFFF;
+  padding-top: 20px;
+  min-height: 200px;
+}
+main .insights .insights-content .insights-content__news_cards .insights-content__news_cards__card .insights-content__news_cards__card__info .insights-content__news_cards__card__info__read-more {
+  position: absolute;
+  bottom: 20;
+  white-space: nowrap;
+  text-decoration: none;
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  padding: 18px 19px;
+  border: 1px solid white;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+main .insights .insights-content .insights-content__news_cards .insights-content__news_cards__card .insights-content__news_cards__card__info .insights-content__news_cards__card__info__read-more:hover {
+  background: white;
+  color: #1D1E22;
+}
+main .insights .insights-content .insights-content__news_cards .insights-content__news_cards__card .insights-content__news_cards__card__info .insights-content__news_cards__card__info__read-more iconify-icon {
+  padding-top: 4px;
+  padding-left: 6px;
+}
+main .download-app {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+main .download-app .download-app__content {
+  background: #1D1E22;
+  padding: 95px 180px 95px 72px;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .download-app .download-app__content .download-app__title {
+  font-family: "Monument Extended";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 36px;
+  letter-spacing: 0.04em;
+  color: white;
+  max-width: 550px;
+}
+main .download-app .download-app__content .download-app__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .download-app .download-app__content .download-app__buttons .download-app__buttons__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .download-app .download-app__content .download-app__buttons .download-app__buttons__button a {
+  position: relative;
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 18px 24px;
+  padding: 18px 24px 18px 48px;
+  background: #2C2D31;
+  -webkit-box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+          box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+  border-radius: 50px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+main .download-app .download-app__content .download-app__buttons .download-app__buttons__button a iconify-icon {
+  position: absolute;
+  left: 20px;
+}
+main .download-app .download-app__content .download-app__buttons .download-app__buttons__button a:hover {
+  background: var(--color-turquoise);
+  color: #1D1E22;
+}
+main .download-app .download-app__content .download-app__buttons .download-app__buttons__ios {
+  margin-right: 20px;
+}
+main .download-app .download-app__content .download-app__buttons .download-app__buttons__ios iconify-icon {
+  top: 15px;
+}
+
+footer {
+  background: #1D1E22;
+  padding-top: 50px;
+  padding-bottom: 48px;
+}
+footer .footer-content .footer-content__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+footer .footer-content .footer-content__info .footer-content__logo {
+  padding-top: 100px;
+}
+footer .footer-content .footer-content__info .footer-content__logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-family: "Gilroy Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+footer .footer-content .footer-content__info .footer-content__logo a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+footer .footer-content .footer-content__info .footer-content__quick-links li:first-child,
+footer .footer-content .footer-content__info .footer-content__marketplace li:first-child {
+  font-family: "Monument Extended";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #FFFFFF;
+  padding-top: 28px;
+}
+footer .footer-content .footer-content__info .footer-content__quick-links li:nth-child(2),
+footer .footer-content .footer-content__info .footer-content__marketplace li:nth-child(2) {
+  margin-top: 16px;
+}
+footer .footer-content .footer-content__info .footer-content__quick-links li a,
+footer .footer-content .footer-content__info .footer-content__marketplace li a {
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #DFE5F5;
+  text-decoration: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+footer .footer-content .footer-content__info .footer-content__quick-links li a:hover,
+footer .footer-content .footer-content__info .footer-content__marketplace li a:hover {
+  opacity: 0.7;
+}
+footer .footer-content .footer-content__info .footer-content__email-form {
+  background: var(--color-turquoise);
+  padding: 80px 48px;
+  border-radius: 30px;
+  position: relative;
+}
+footer .footer-content .footer-content__info .footer-content__email-form h6 {
+  font-family: "Monument Extended";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.04em;
+  color: #1D1E22;
+  max-width: 340px;
+}
+footer .footer-content .footer-content__info .footer-content__email-form input {
+  margin-top: 20px;
+  min-width: 340px;
+  padding: 10px;
+  border: 0;
+  border-bottom: 1px solid #3FC9B0;
+  background: transparent;
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #1D1E22;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+footer .footer-content .footer-content__info .footer-content__email-form input:focus {
+  outline: none;
+  border-bottom: 1px solid #1D1E22;
+}
+footer .footer-content .footer-content__info .footer-content__email-form input:focus ~ .footer-content__email-form__button {
+  color: #1D1E22;
+}
+footer .footer-content .footer-content__info .footer-content__email-form input:focus::-webkit-input-placeholder {
+  color: #1D1E22;
+}
+footer .footer-content .footer-content__info .footer-content__email-form input:focus::-moz-placeholder {
+  color: #1D1E22;
+}
+footer .footer-content .footer-content__info .footer-content__email-form input:focus:-ms-input-placeholder {
+  color: #1D1E22;
+}
+footer .footer-content .footer-content__info .footer-content__email-form input:focus::-ms-input-placeholder {
+  color: #1D1E22;
+}
+footer .footer-content .footer-content__info .footer-content__email-form input:focus::placeholder {
+  color: #1D1E22;
+}
+footer .footer-content .footer-content__info .footer-content__email-form .footer-content__email-form__button {
+  padding: 5px;
+  position: absolute;
+  right: 43px;
+  bottom: 80px;
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+  color: #757575;
+}
+footer .footer-content .footer-content__etc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 48px;
+}
+footer .footer-content .footer-content__etc .footer-content__etc__copyrights {
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #DFE5F5;
+}
+footer .footer-content .footer-content__etc .footer-content__etc__terms-privacy a {
+  text-decoration: none;
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #DFE5F5;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+footer .footer-content .footer-content__etc .footer-content__etc__terms-privacy a:first-child {
+  margin-right: 15px;
+}
+footer .footer-content .footer-content__etc .footer-content__etc__terms-privacy a:hover {
+  opacity: 0.7;
+}
+footer .footer-content .footer-content__etc .footer-content__etc__social-media a {
+  color: #818698;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+footer .footer-content .footer-content__etc .footer-content__etc__social-media a:hover {
+  color: var(--color-turquoise);
+}
+footer .footer-content .footer-content__etc .footer-content__etc__social-media a:not(:last-child) {
+  margin-right: 12px;
+}
